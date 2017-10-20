@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Threading;
-
-namespace Poc
+﻿namespace Poc
 {
+    using System;
+    using System.Collections.Concurrent;
+    using System.Collections.Generic;
+    using System.Threading;
+
     public class ItemHandler<T>
     {
         private List<Thread> consumerThreads = new List<Thread>();

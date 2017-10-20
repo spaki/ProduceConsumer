@@ -1,9 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-
-namespace Poc
+﻿namespace Poc
 {
-    class Program
+    using ProducerConsumer;
+    using System;
+    using System.Threading.Tasks;
+
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -22,12 +23,5 @@ namespace Poc
         {
             Console.WriteLine($"item number {item.Number}, id {item.Id}");
         }
-    }
-
-    class Item
-    {
-        public Guid Id { get; set; }
-
-        public int Number { get; set; }
     }
 }
